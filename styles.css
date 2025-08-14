@@ -1,3 +1,31 @@
-h1 {
-    color: blue;
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
 }
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: repeat(3, 33%);
+}
+
+.dashboard {
+    background-color: navy;
+    color: white; 
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+}
+
+.account {
+    background: grey;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.projects {
+    background: brown;
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+}
+
