@@ -6,18 +6,19 @@ html, body {
 .container {
     height: 100%;
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 4fr;
     grid-template-rows: repeat(3, 33%);
 }
 
-.dashboard {
-    background-color: navy;
-    color: white; 
+.side-bar {
+    background-color: rgb(76, 143, 210);
+    color: black; 
     grid-column: 1 / 2;
     grid-row: 1 / 4;
+
 }
 
-.account {
+.header {
     background: grey;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
@@ -29,3 +30,29 @@ html, body {
     grid-row: 2 / 4;
 }
 
+img {
+    width: 25px;
+    height: 25px;
+    margin-top: 10px;
+}
+
+.dash, .general, .nav {
+    display: grid;
+    grid-template-columns: repeat(2, 45px);
+    grid-template-rows: repeat(6, 1fr);
+    margin-left: 10px;
+}
+
+.general {
+    margin-top: 30px;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.dash {
+    grid-template-rows: 1fr;
+}
+
+.dash img {
+    width: 40px;
+    height: 40px;
+}
