@@ -7,19 +7,19 @@ html, body {
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: repeat(3, 33%);
+    grid-template-rows: 20% repeat(4, 20%);
 }
 
 .side-bar {
     background-color: rgb(76, 143, 210);
     color: black; 
     grid-column: 1 / 2;
-    grid-row: 1 / 4;
+    grid-row: 1 / 6;
 
 }
 
 .header {
-    background: grey;
+    background: white;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
 }
@@ -27,7 +27,7 @@ html, body {
 .projects {
     background: brown;
     grid-column: 2 / 3;
-    grid-row: 2 / 4;
+    grid-row: 2 / 6;
 }
 
 img {
