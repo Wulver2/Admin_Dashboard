@@ -19,9 +19,36 @@ html, body {
 }
 
 .header {
+    margin-left: 20px;
+    margin-top: 10px;
     background: white;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: 40px repeat(4, 1fr);
+    grid-template-rows: repeat(2, 50px);
+}
+.bar {
+    background-color: rgb(186, 186, 186);
+    border-radius: 30px;
+    width: 500px;
+    height: 25px;
+    margin-top: 10px;
+}
+
+.greeting h2 {
+    margin-top: 0px;
+}
+
+.greeting p {
+    margin-bottom: 5px;
+}
+
+.action {
+    border-radius: 30px;
+    margin: 5px;
+    color: white;
+    background-color:  rgb(76, 143, 210);
 }
 
 .projects {
