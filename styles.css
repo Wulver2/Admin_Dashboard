@@ -71,8 +71,29 @@ html, body {
     background: rgb(211, 216, 218);
     grid-column: 2 / 3;
     grid-row: 2 / 6;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
+.projects .proj {
+    display: grid;
+    grid-template-columns:repeat(2, 300px);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 10px;
+
+}
+
+.proj > div {
+    width: 280px;
+    height: 150px;
+    border-style: solid;
+    border-color: yellow;
+}
+
+.trending {
+    grid-column: 2 / 3;
+}
 img {
     width: 25px;
     height: 25px;
