@@ -94,12 +94,29 @@ html, body {
     padding: 3px;
     background-color: white;
 }
+.announcements  > div, .trending > div {
+    width: 250px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    padding-left: 10px;
+}
+
+.announcements  > div {
+    font-size: 10px;
+}
 
 .right_hand {
     margin-left: 10px;
     grid-column: 2 / 3;
     display: grid;
     grid-template-rows: 60vh 40vh;
+}
+
+.line {
+    border-style: solid;
+    border-color: gainsboro;
+    border-width: 1px;
 }
 
 img {
